@@ -9,5 +9,5 @@ We can choose our desired mode from the radio button and input the text in the t
 
 ### Screenshots:-
 
-<img src="ScreenShots/1.png" width="450px"><img src="ScreenShots/2.png" width="450px">
-<img src="ScreenShots/3.png" width="450px"><img src="ScreenShots/4.png" width="450px">
+<img src="Screenshots/1.png" width="450px"><img src="Screenshots/2.png" width="450px">
+<img src="Screenshots/3.png" width="450px"><img src="Screenshots/4.png" width="450px">
