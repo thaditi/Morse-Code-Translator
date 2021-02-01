@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Translate Morse Code</h1>
+    <div class="elements">
+      <div class="mode">
+        <h2>Mode :</h2>
+        <div class="rbn">
+          <input
+            type="radio"
+            id="morseToTextRbn"
+            name="mode"
+            onchange="updateMode();"
+          /><label for="morseToTextRbn">Morse Code to Text</label>
+
+          <input
+            type="radio"
+            id="textToMorseRbn"
+            name="mode"
+            onchange="updateMode();"
+            checked
+          /><label for="textToMorseRbn">Text to Morse Code</label>
+        </div>
+      </div>
+      <div class="main-div">
+        <div class="form">
+          <textarea
+            id="srctext"
+            oninput="updateText();"
+            spellcheck="false"
+            placeholder="Type message text here"
+            rows="9"
+          ></textarea>
+
+          <label for="plaintext" class="translation" id="resultlabel"
+            >Translation</label
+          >
+          <textarea id="resulttext" spellcheck="false" rows="9"></textarea>
+        </div>
+        <br />
+        <div class="character">
+          <h2>Morse Characters</h2>
+          <table id="table" style="width: 25em">
+            <tr>
+              <td class="text-monospace">-</td>
+              <td>Dash</td>
+            </tr>
+            <tr>
+              <td class="text-monospace">.</td>
+              <td>Dot</td>
+            </tr>
+            <tr>
+              <td>Space</td>
+              <td>Letter Separator</td>
+            </tr>
+            <tr>
+              <td class="text-monospace">/</td>
+              <td>Word Separator</td>
+            </tr>
+            <tr>
+              <td class="text-monospace">#</td>
+              <td>Untranslatable Character</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
